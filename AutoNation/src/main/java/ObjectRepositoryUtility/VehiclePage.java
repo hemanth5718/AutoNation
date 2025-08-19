@@ -81,10 +81,26 @@ public class VehiclePage {
 	private WebElement categoryApplyBtn;
 	@FindBy(xpath = "//a[@class='vehicle__image b-lazy b-loaded']")
 	private WebElement ramCarBtn;
+	@FindBy(id = "searchInput")	
+	private WebElement searchBar;
+	@FindBy(xpath = "//button[@class='search-button']")
+	private WebElement seatchBarGoBtn;
 	
 	
 	
 	
+
+	public WebElement getSeatchBarGoBtn() {
+		return seatchBarGoBtn;
+	}
+
+
+
+	public WebElement getSearchBar() {
+		return searchBar;
+	}
+
+
 
 	public WebElement getRamCarBtn() {
 		return ramCarBtn;
