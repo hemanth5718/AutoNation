@@ -1,7 +1,8 @@
 package AutoVehicleTest;
 
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import BaseClass.BaseClass;
@@ -20,7 +21,7 @@ public class Calculation extends BaseClass{
 		VehiclePage vp  =new VehiclePage(driver);
 		String data = elib.getStringDataFromExcel("TestData4", 1, 0);
 		WebElement searchbar = vp.getSearchBar();
-		wlib.waitForElementPresent(driver, searchbar);
+		wlib.waitForElementClickable(driver, searchbar);
 		searchbar.sendKeys(data);
 		vp.getSeatchBarGoBtn().click();
 		wlib.scrollByAmount(driver, 0,600);
@@ -38,32 +39,15 @@ public class Calculation extends BaseClass{
 		String  intrest= Double.toString(intr);
 		fxp.getIntrestRateTxt().sendKeys(intrest);
 		fxp.getCalculateBtn().click();
-		double ED = elib.getNumericDataFromExcel("TestData4", 1, 3);
-		String  expectedResult= Double.toString(ED);
-		WebElement A = fxp.getFinalResult();
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		String value = (String) js.executeScript("return arguments[0].textContent;", A);
-		System.out.println(value);
-		String ar = A.getDomAttribute("innerHTML");
-		System.out.println(ar);
-		//boolean status = ar.contains(expectedResult);
-		//Assert.assertEquals(status, true);
+		String expectedResult = elib.getStringDataFromExcel("TestData4", 1, 3);
+		//String  expectedResult= Double.toString(ED);
+		wlib.scrollByAmount(driver, 0,500);
 		
+		WebElement finalr = driver.findElement(By.xpath("//li[@class='paymentEstimate']/input"));	
+		wlib.waitForElementVisible(driver, finalr);
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		String actualResult = finalr.getDomProperty("textContent");
+		Assert.assertEquals(actualResult, expectedResult);		
 		
 
 }

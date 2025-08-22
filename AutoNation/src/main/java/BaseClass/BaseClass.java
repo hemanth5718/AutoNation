@@ -57,8 +57,6 @@ public class BaseClass {
 	
 	@BeforeMethod(alwaysRun = true)
 	public void configBm() throws Throwable {
-		System.out.println("===login===");
-
 		  wlib.maxWindow(driver);
 		  wlib.waitForPageLoad(driver);
 		String url = flib.getDataFromPropertiesFile("url");
@@ -70,7 +68,7 @@ public class BaseClass {
 	@AfterClass(alwaysRun = true)
 		public void configAC() {
 			System.out.println("==close the browser==");
-			driver.quit();
+			//driver.quit();
 		}
 		
 	

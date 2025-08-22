@@ -13,12 +13,10 @@ public class VehiclePage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//a[contains(text(),'Cars')]")
+	@FindBy(xpath = "//img[@src='/images/car--cta.png']")
 	private WebElement carsBtn;
-	@FindBy(xpath = "//a[contains(text(),'SUVs')]")
+	@FindBy(xpath = "//img[@src='/images/suv--cta-new.png']")
 	private WebElement suvBtn;
-	@FindBy(xpath = "//a[contains(text(),'Vans')]")
-	private WebElement vansBtn;
 	@FindBy(xpath = "//input[@value='north edmonton']")
 	private WebElement northEdmontonCB;
 	@FindBy(xpath = "//a[@class='filter-group__apply-button']")
@@ -85,6 +83,8 @@ public class VehiclePage {
 	private WebElement searchBar;
 	@FindBy(xpath = "//button[@class='search-button']")
 	private WebElement seatchBarGoBtn;
+	@FindBy(xpath = "//img[@src='/images/van--cta-new.png']")
+	private WebElement vansBtn;
 	
 	
 	
