@@ -12,7 +12,7 @@ import ObjectRepositoryUtility.HomePage;
 import ObjectRepositoryUtility.VehiclePage;
 
 public class Calculation extends BaseClass{
-	@Test(groups = "RegressionTest")
+	@Test(groups = "regressionTest")
 	public void calculation() throws Throwable
 	{
 		HomePage hp = new HomePage(driver);

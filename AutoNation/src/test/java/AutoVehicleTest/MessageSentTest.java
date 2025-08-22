@@ -12,7 +12,7 @@ import ObjectRepositoryUtility.VehiclePage;
 
 public class MessageSentTest extends BaseClass {
 
-	@Test
+	@Test(groups = "regressionTest")
 	public void messagesentest() throws Throwable {
 		HomePage hp = new HomePage(driver);
 		hp.getOkBtn().click();

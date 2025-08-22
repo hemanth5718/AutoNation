@@ -10,7 +10,7 @@ import ObjectRepositoryUtility.RamCarPage;
 import ObjectRepositoryUtility.VehiclePage;
 
 public class FourWheelDriveTest extends BaseClass {
-	@Test(groups = "SystemTest")
+	@Test(groups = "regressionTest")
 	public void fourWheel() throws Throwable {
 		HomePage hp = new HomePage(driver);
 		hp.getOkBtn().click();

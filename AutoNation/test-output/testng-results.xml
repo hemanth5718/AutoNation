@@ -1,37 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-22T11:04:13 IST" name="Default suite" finished-at="2025-08-22T11:05:15 IST" duration-ms="62001">
+  <suite started-at="2025-08-22T16:57:58 IST" name="Default suite" finished-at="2025-08-22T17:17:05 IST" duration-ms="1147129">
     <groups>
-      <group name="RegressionTest">
-        <method signature="Calculation.calculation()[pri:0, instance:AutoVehicleTest.Calculation@37ceb1df]" name="calculation" class="AutoVehicleTest.Calculation"/>
-      </group> <!-- RegressionTest -->
+      <group name="smokeTest">
+        <method signature="BasicTest.vehicleTest()[pri:0, instance:AutoNation.BasicTest@22fcf7ab]" name="vehicleTest" class="AutoNation.BasicTest"/>
+        <method signature="CarTest.carTest()[pri:0, instance:AutoNation.CarTest@43c1b556]" name="carTest" class="AutoNation.CarTest"/>
+        <method signature="RvTest.rvTest()[pri:0, instance:AutoNation.RvTest@4009e306]" name="rvTest" class="AutoNation.RvTest"/>
+        <method signature="SuvTest.suvTest()[pri:0, instance:AutoNation.SuvTest@587e5365]" name="suvTest" class="AutoNation.SuvTest"/>
+        <method signature="TrailerTest.trailersTest()[pri:0, instance:AutoNation.TrailerTest@2002fc1d]" name="trailersTest" class="AutoNation.TrailerTest"/>
+      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2025-08-22T11:04:13 IST" name="Default test" finished-at="2025-08-22T11:05:15 IST" duration-ms="62001">
-      <class name="AutoVehicleTest.Calculation">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:AutoVehicleTest.Calculation@37ceb1df]" started-at="2025-08-22T11:04:13 IST" name="configBC" finished-at="2025-08-22T11:04:15 IST" duration-ms="1357" status="PASS">
+    <test started-at="2025-08-22T16:57:58 IST" name="Default test" finished-at="2025-08-22T17:17:05 IST" duration-ms="1147129">
+      <class name="AutoNation.RvTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:AutoNation.RvTest@4009e306]" started-at="2025-08-22T16:59:08 IST" name="configBC" finished-at="2025-08-22T16:59:09 IST" duration-ms="759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBm()[pri:0, instance:AutoVehicleTest.Calculation@37ceb1df]" started-at="2025-08-22T11:04:15 IST" name="configBm" finished-at="2025-08-22T11:04:33 IST" duration-ms="17821" status="PASS">
+        <test-method is-config="true" signature="configBm()[pri:0, instance:AutoNation.RvTest@4009e306]" started-at="2025-08-22T16:59:09 IST" name="configBm" finished-at="2025-08-22T16:59:39 IST" duration-ms="30203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBm -->
-        <test-method signature="calculation()[pri:0, instance:AutoVehicleTest.Calculation@37ceb1df]" started-at="2025-08-22T11:04:33 IST" name="calculation" finished-at="2025-08-22T11:05:15 IST" duration-ms="42753" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="rvTest()[pri:0, instance:AutoNation.RvTest@4009e306]" started-at="2025-08-22T16:59:39 IST" name="rvTest" finished-at="2025-08-22T16:59:49 IST" duration-ms="10571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rvTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:AutoNation.RvTest@4009e306]" started-at="2025-08-22T16:59:49 IST" name="configAC" finished-at="2025-08-22T16:59:50 IST" duration-ms="333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- AutoNation.RvTest -->
+      <class name="AutoNation.TrailerTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:AutoNation.TrailerTest@2002fc1d]" started-at="2025-08-22T16:57:58 IST" name="configBC" finished-at="2025-08-22T16:57:59 IST" duration-ms="1315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBm()[pri:0, instance:AutoNation.TrailerTest@2002fc1d]" started-at="2025-08-22T16:57:59 IST" name="configBm" finished-at="2025-08-22T16:58:17 IST" duration-ms="17561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBm -->
+        <test-method signature="trailersTest()[pri:0, instance:AutoNation.TrailerTest@2002fc1d]" started-at="2025-08-22T16:58:17 IST" name="trailersTest" finished-at="2025-08-22T16:59:07 IST" duration-ms="50818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trailersTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:AutoNation.TrailerTest@2002fc1d]" started-at="2025-08-22T16:59:07 IST" name="configAC" finished-at="2025-08-22T16:59:08 IST" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- AutoNation.TrailerTest -->
+      <class name="AutoNation.CarTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:AutoNation.CarTest@43c1b556]" started-at="2025-08-22T16:59:50 IST" name="configBC" finished-at="2025-08-22T16:59:51 IST" duration-ms="880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBm()[pri:0, instance:AutoNation.CarTest@43c1b556]" started-at="2025-08-22T16:59:51 IST" name="configBm" finished-at="2025-08-22T17:00:18 IST" duration-ms="27910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBm -->
+        <test-method signature="carTest()[pri:0, instance:AutoNation.CarTest@43c1b556]" started-at="2025-08-22T17:00:18 IST" name="carTest" finished-at="2025-08-22T17:00:59 IST" duration-ms="40024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- carTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:AutoNation.CarTest@43c1b556]" started-at="2025-08-22T17:00:59 IST" name="configAC" finished-at="2025-08-22T17:00:59 IST" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- AutoNation.CarTest -->
+      <class name="AutoNation.SuvTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:AutoNation.SuvTest@587e5365]" started-at="2025-08-22T17:00:59 IST" name="configBC" finished-at="2025-08-22T17:01:00 IST" duration-ms="844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBm()[pri:0, instance:AutoNation.SuvTest@587e5365]" started-at="2025-08-22T17:01:00 IST" name="configBm" finished-at="2025-08-22T17:01:28 IST" duration-ms="28585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBm -->
+        <test-method signature="suvTest()[pri:0, instance:AutoNation.SuvTest@587e5365]" started-at="2025-08-22T17:01:28 IST" name="suvTest" finished-at="2025-08-22T17:16:34 IST" duration-ms="905686" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[expected [$ 1,282.39] but found []]]>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=139.0.7258.128)
+Build info: version: '4.34.0', revision: '2a4c61c498'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34b084f74b4cf61df8bec0ca9b1177ff, clickElement {id=f.72D041919C3DD65753D5573C7ABCEB84.d.397DE7D3B7A1B35B3602F80A40795F2A.e.2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\heman\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50548}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50548/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (34b084f74b4cf61df8bec0ca9b1177ff)] -> xpath: //img[@src='/images/car-cta.png']]
+Session ID: 34b084f74b4cf61df8bec0ca9b1177ff]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [$ 1,282.39] but found []
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at AutoVehicleTest.Calculation.calculation(Calculation.java:49)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=139.0.7258.128)
+Build info: version: '4.34.0', revision: '2a4c61c498'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34b084f74b4cf61df8bec0ca9b1177ff, clickElement {id=f.72D041919C3DD65753D5573C7ABCEB84.d.397DE7D3B7A1B35B3602F80A40795F2A.e.2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\heman\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50548}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50548/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (34b084f74b4cf61df8bec0ca9b1177ff)] -> xpath: //img[@src='/images/car-cta.png']]
+Session ID: 34b084f74b4cf61df8bec0ca9b1177ff
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at AutoNation.SuvTest.suvTest(SuvTest.java:15)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,15 +152,33 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- calculation -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:AutoVehicleTest.Calculation@37ceb1df]" started-at="2025-08-22T11:05:15 IST" name="configAC" finished-at="2025-08-22T11:05:15 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- suvTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:AutoNation.SuvTest@587e5365]" started-at="2025-08-22T17:16:34 IST" name="configAC" finished-at="2025-08-22T17:16:34 IST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- AutoVehicleTest.Calculation -->
+      </class> <!-- AutoNation.SuvTest -->
+      <class name="AutoNation.BasicTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:AutoNation.BasicTest@22fcf7ab]" started-at="2025-08-22T17:16:34 IST" name="configBC" finished-at="2025-08-22T17:16:35 IST" duration-ms="718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBm()[pri:0, instance:AutoNation.BasicTest@22fcf7ab]" started-at="2025-08-22T17:16:35 IST" name="configBm" finished-at="2025-08-22T17:16:54 IST" duration-ms="18659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBm -->
+        <test-method signature="vehicleTest()[pri:0, instance:AutoNation.BasicTest@22fcf7ab]" started-at="2025-08-22T17:16:54 IST" name="vehicleTest" finished-at="2025-08-22T17:17:04 IST" duration-ms="10516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vehicleTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:AutoNation.BasicTest@22fcf7ab]" started-at="2025-08-22T17:17:04 IST" name="configAC" finished-at="2025-08-22T17:17:05 IST" duration-ms="729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- AutoNation.BasicTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

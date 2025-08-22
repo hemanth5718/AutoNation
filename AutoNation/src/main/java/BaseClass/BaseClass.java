@@ -14,63 +14,52 @@ import FileUtility.JavaUtility;
 import WebDriverUtility.UtilityClassObject;
 import WebDriverUtility.WebDriverUtility;
 
-
 public class BaseClass {
 
-		public	FileUtility flib = new FileUtility();
-		public	JavaUtility jlib= new JavaUtility();
-		public	ExcelUtility elib = new ExcelUtility();
-		public WebDriverUtility wlib = new WebDriverUtility();
-		public WebDriver driver = null;
-		public static WebDriver edriver = null;
+	public FileUtility flib = new FileUtility();
+	public JavaUtility jlib = new JavaUtility();
+	public ExcelUtility elib = new ExcelUtility();
+	public WebDriverUtility wlib = new WebDriverUtility();
+	public WebDriver driver = null;
+	public static WebDriver edriver = null;
 
-		
-	//@Parameters("BROWSER")
+	// @Parameters("BROWSER")
 	@BeforeClass(alwaysRun = true)
 	public void configBC() throws Throwable {
-		//public void configBC(@Optional("chrome")String browser) throws Throwable {
-		//String browser
+		// public void configBC(@Optional("chrome")String browser) throws Throwable {
+		// String browser
 		System.out.println("==launch the Browser==");
 		String BROWSER = flib.getDataFromPropertiesFile("browser");
-				//flib.getDataFromPropertiesFile("browser");
-				//browser;
-				
-		if (BROWSER.equals("chrome")) 
-		{
+		// flib.getDataFromPropertiesFile("browser");
+		// browser;
+
+		if (BROWSER.equals("chrome")) {
 			driver = new ChromeDriver();
-		} 
-		else if (BROWSER.equals("firefox"))
-		{
+		} else if (BROWSER.equals("firefox")) {
 			driver = new FirefoxDriver();
-		} 
-		else if (BROWSER.equals("edge")) 
-		{
+		} else if (BROWSER.equals("edge")) {
 			driver = new EdgeDriver();
-		} 
-		else {
+		} else {
 			driver = new ChromeDriver();
 		}
-		edriver= driver;
+		edriver = driver;
 		UtilityClassObject.setDriver(driver);
-		
+
 	}
-	
+
 	@BeforeMethod(alwaysRun = true)
 	public void configBm() throws Throwable {
-		  wlib.maxWindow(driver);
-		  wlib.waitForPageLoad(driver);
+		wlib.maxWindow(driver);
+		wlib.waitForPageLoad(driver);
 		String url = flib.getDataFromPropertiesFile("url");
 		driver.get(url);
-		
-	
+
 	}
-	
+
 	@AfterClass(alwaysRun = true)
-		public void configAC() {
-			System.out.println("==close the browser==");
-			//driver.quit();
-		}
-		
-	
+	public void configAC() {
+		System.out.println("==close the browser==");
+		driver.quit();
+	}
 
 }
