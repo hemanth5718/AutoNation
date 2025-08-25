@@ -17,8 +17,10 @@ public class VehiclePage {
 	private WebElement carsBtn;
 	@FindBy(xpath = "//img[@src='/images/suv--cta-new.png']")
 	private WebElement suvBtn;
-	@FindBy(xpath = "//input[@value='north edmonton']")
-	private WebElement northEdmontonCB;
+	@FindBy(xpath = "//input[@value='acheson']")
+	private WebElement achensonCB;
+	
+
 	@FindBy(xpath = "//a[@class='filter-group__apply-button']")
 	private WebElement applyBtn;
 	@FindBy(xpath = "//a[@aria-controls='filtersCollapseFuelType']")
@@ -77,7 +79,7 @@ public class VehiclePage {
 	private WebElement truckCheckBox;
 	@FindBy(xpath = "(//a[@class='filter-group__apply-button'])[7]")
 	private WebElement categoryApplyBtn;
-	@FindBy(xpath = "//a[@class='vehicle__image b-lazy b-loaded']")
+	@FindBy(xpath = "(//a[@class='vehicle__image b-lazy b-loaded'])[2]")
 	private WebElement ramCarBtn;
 	@FindBy(id = "searchInput")	
 	private WebElement searchBar;
@@ -93,7 +95,9 @@ public class VehiclePage {
 	public WebElement getSeatchBarGoBtn() {
 		return seatchBarGoBtn;
 	}
-
+	public WebElement getAchensonCB() {
+		return achensonCB;
+	}
 
 
 	public WebElement getSearchBar() {
@@ -226,9 +230,7 @@ public class VehiclePage {
 		return applyBtn;
 	}
 
-	public WebElement getNorthEdmontonCB() {
-		return northEdmontonCB;
-	}
+
 	public WebElement getCarsBtn() {
 		return carsBtn;
 	}

@@ -6,22 +6,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="AutoVehicleTest.VehicleAffordablilityTest">
-        <methods>
-          <include name="configBC"/>
-          <include name="configAC"/>
-          <include name="configBm"/>
-          <include name="vehicleAffTest"/>
-        </methods>
-      </class> <!-- AutoVehicleTest.VehicleAffordablilityTest -->
-      <class name="AutoVehicleTest.FourWheelDriveTest">
-        <methods>
-          <include name="configBC"/>
-          <include name="configAC"/>
-          <include name="fourWheel"/>
-          <include name="configBm"/>
-        </methods>
-      </class> <!-- AutoVehicleTest.FourWheelDriveTest -->
       <class name="AutoVehicleTest.Calculation">
         <methods>
           <include name="calculation"/>
@@ -30,25 +14,6 @@
           <include name="configBm"/>
         </methods>
       </class> <!-- AutoVehicleTest.Calculation -->
-      <class name="AutoNation.BasicTest">
-        <methods>
-          <include name="vehicleTest"/>
-          <include name="carTest"/>
-          <include name="configBC"/>
-          <include name="configAC"/>
-          <include name="suvTest"/>
-          <include name="configBm"/>
-          <include name="trailersTest"/>
-        </methods>
-      </class> <!-- AutoNation.BasicTest -->
-      <class name="AutoVehicleTest.AutoVehicleTest">
-        <methods>
-          <include name="configBC"/>
-          <include name="configAC"/>
-          <include name="configBm"/>
-          <include name="autoEstimateTest"/>
-        </methods>
-      </class> <!-- AutoVehicleTest.AutoVehicleTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

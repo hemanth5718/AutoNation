@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AutoNation.SuvTest">
+      <class name="AutoVehicleTest.VehicleAffordablilityTest">
         <methods>
           <include name="configBC"/>
           <include name="configAC"/>
           <include name="configBm"/>
-          <include name="suvTest"/>
+          <include name="vehicleAffTest"/>
         </methods>
-      </class> <!-- AutoNation.SuvTest -->
+      </class> <!-- AutoVehicleTest.VehicleAffordablilityTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
