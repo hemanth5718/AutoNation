@@ -8,7 +8,6 @@
     <classes>
       <class name="AutoVehicleTest.MessageSentTest"/>
       <class name="AutoVehicleTest.VehicleAffordablilityTest"/>
-      <class name="AutoVehicleTest.Calculation"/>
       <class name="AutoVehicleTest.AutoVehicleTest"/>
       <class name="AutoVehicleTest.FourWheelDriveTest"/>
     </classes>

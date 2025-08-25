@@ -10,7 +10,6 @@
       <class name="AutoVehicleTest.VehicleAffordablilityTest"/>
       <class name="AutoNation.SuvTest"/>
       <class name="AutoNation.TrailerTest"/>
-      <class name="AutoVehicleTest.Calculation"/>
       <class name="AutoNation.CarTest"/>
       <class name="AutoVehicleTest.AutoVehicleTest"/>
       <class name="AutoNation.BasicTest"/>

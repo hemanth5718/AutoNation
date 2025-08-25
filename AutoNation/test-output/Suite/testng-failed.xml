@@ -6,14 +6,22 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="AutoVehicleTest.Calculation">
+      <class name="AutoVehicleTest.VehicleAffordablilityTest">
         <methods>
-          <include name="calculation"/>
           <include name="configBC"/>
           <include name="configAC"/>
           <include name="configBm"/>
+          <include name="vehicleAffTest"/>
         </methods>
-      </class> <!-- AutoVehicleTest.Calculation -->
+      </class> <!-- AutoVehicleTest.VehicleAffordablilityTest -->
+      <class name="AutoVehicleTest.FourWheelDriveTest">
+        <methods>
+          <include name="configBC"/>
+          <include name="configAC"/>
+          <include name="fourWheel"/>
+          <include name="configBm"/>
+        </methods>
+      </class> <!-- AutoVehicleTest.FourWheelDriveTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
